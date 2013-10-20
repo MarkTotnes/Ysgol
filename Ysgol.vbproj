@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E9CBB75F-C66B-49ED-BE9E-BCBC33C31101}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Blaeneinion</RootNamespace>
+    <AssemblyName>Blaeneinion</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Blaeneinion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Blaeneinion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>packages\AjaxControlToolkit.7.0725\lib\40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin">
+      <HintPath>packages\AjaxMin.4.97.4951.28483\lib\net40\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="BarcodeLib.Barcode, Version=4.0.3.19, Culture=neutral, PublicKeyToken=6b2b1bba50bb2e01, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v13.1.Core, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxScheduler.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v13.1.Web, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.1.Web, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v13.1.Web, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v13.1.Core, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EO.Pdf, Version=4.0.60.2, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL" />
+    <Reference Include="EO.Web, Version=10.0.54.2, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL" />
+    <Reference Include="HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>packages\HtmlAgilityPack.1.4.6\lib\Net40\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\App_LocalResources\data.sdf" />
+    <Content Include="bin\BarcodeLib.Barcode.dll" />
+    <Content Include="bin\EO.Pdf.dll" />
+    <Content Include="bin\EO.Web.dll" />
+    <Content Include="centre.css" />
+    <Content Include="datamatrix.aspx.cs" />
+    <Content Include="Default.aspx" />
+    <Content Include="school\Diary-List.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="recipes.aspx" />
+    <Content Include="school\2010\DSC04125.JPG" />
+    <Content Include="school\2010\Gwersi Beicio 001.jpg" />
+    <Content Include="school\2010\S8000799.JPG" />
+    <Content Include="school\2010\S8000800.JPG" />
+    <Content Include="school\2010\S8000970.JPG" />
+    <Content Include="school\2010\S8000971.JPG" />
+    <Content Include="school\2010\S8000972.JPG" />
+    <Content Include="school\2010\S8000974.JPG" />
+    <Content Include="school\2010\S8000975.JPG" />
+    <Content Include="school\2010\S8000976.JPG" />
+    <Content Include="school\2010\S8000982.JPG" />
+    <Content Include="school\2010\S8000984.JPG" />
+    <Content Include="school\2010\S8000994.JPG" />
+    <Content Include="school\2010\S8000995.JPG" />
+    <Content Include="school\2010\S8001006.JPG" />
+    <Content Include="school\2010\S8001096.JPG" />
+    <Content Include="school\2010\S8001097.JPG" />
+    <Content Include="school\2010\S8001098.JPG" />
+    <Content Include="school\2010\S8001100.JPG" />
+    <Content Include="school\2010\S8001101.JPG" />
+    <Content Include="school\2010\S8001102.JPG" />
+    <Content Include="school\2010\S8001104.JPG" />
+    <Content Include="school\2010\S8001105.JPG" />
+    <Content Include="school\2010\S8001128.JPG" />
+    <Content Include="school\2010\S8001130.JPG" />
+    <Content Include="school\2010\S8001143.JPG" />
+    <Content Include="school\2010\S8001146.JPG" />
+    <Content Include="school\2011\2010-12-10 Gwasanaeth Diolchgarwch 008.jpg" />
+    <Content Include="school\2011\2010-12-10 Gwasanaeth Diolchgarwch 009.jpg" />
+    <Content Include="school\2011\DSC04196.JPG" />
+    <Content Include="school\2011\DSC04197.JPG" />
+    <Content Include="school\2011\DSC04198.JPG" />
+    <Content Include="school\2011\DSC04199.JPG" />
+    <Content Include="school\2011\DSC04200.JPG" />
+    <Content Include="school\2011\DSC04201.JPG" />
+    <Content Include="school\2011\DSC04202.JPG" />
+    <Content Include="school\2011\DSC04203.JPG" />
+    <Content Include="school\2011\DSC04205.JPG" />
+    <Content Include="school\2011\DSC04206.JPG" />
+    <Content Include="school\2011\DSC04231.JPG" />
+    <Content Include="school\2011\DSC04232.JPG" />
+    <Content Include="school\2011\DSC04235.JPG" />
+    <Content Include="school\2011\DSC04236.JPG" />
+    <Content Include="school\2011\DSC04237.JPG" />
+    <Content Include="school\2011\DSC04242.JPG" />
+    <Content Include="school\2011\DSC04245.JPG" />
+    <Content Include="school\2011\DSC04246.JPG" />
+    <Content Include="school\2012\DSC02240.JPG" />
+    <Content Include="school\2012\DSC02241.JPG" />
+    <Content Include="school\2012\DSC02243.JPG" />
+    <Content Include="school\2012\DSC02244.JPG" />
+    <Content Include="school\2012\DSC02247.JPG" />
+    <Content Include="school\2012\DSC02248.JPG" />
+    <Content Include="school\2012\DSC02250.JPG" />
+    <Content Include="school\2012\DSC02251.JPG" />
+    <Content Include="school\2012\S8000844.JPG" />
+    <Content Include="school\2012\S8000846.JPG" />
+    <Content Include="school\2012\S8000847.JPG" />
+    <Content Include="school\2012\S8000848.JPG" />
+    <Content Include="school\2012\S8000849.JPG" />
+    <Content Include="school\2012\S8000850.JPG" />
+    <Content Include="school\2012\S8000851.JPG" />
+    <Content Include="school\2012\S8000852.JPG" />
+    <Content Include="school\2012\S8000853.JPG" />
+    <Content Include="school\2012\S8000854.JPG" />
+    <Content Include="school\2012\S8000855.JPG" />
+    <Content Include="school\2012\S8000856.JPG" />
+    <Content Include="school\2012\S8000857.JPG" />
+    <Content Include="school\2012\S8000860.JPG" />
+    <Content Include="school\2012\S8000861.JPG" />
+    <Content Include="school\2012\S8000862.JPG" />
+    <Content Include="school\2012\S8000867.JPG" />
+    <Content Include="school\2012\S8000966.JPG" />
+    <Content Include="school\Calendar.aspx" />
+    <Content Include="school\Contact.aspx" />
+    <Content Include="school\Games.aspx" />
+    <Content Include="school\Governors.aspx" />
+    <Content Include="school\Home.aspx" />
+    <Content Include="school\images\bg_light.jpg" />
+    <Content Include="school\images\calendar_icon.jpg" />
+    <Content Include="school\images\delete_icon.jpg" />
+    <Content Include="school\images\emblem2.png" />
+    <Content Include="school\images\emblem3.png" />
+    <Content Include="school\images\games\clothes.jpg" />
+    <Content Include="school\images\games\CountSheep.JPG" />
+    <Content Include="school\images\games\MathBalls.JPG" />
+    <Content Include="school\images\games\MusicMemory.JPG" />
+    <Content Include="school\images\games\numbers.jpg" />
+    <Content Include="school\images\games\Whackadifference.JPG" />
+    <Content Include="school\images\generic_sex_icon.jpg" />
+    <Content Include="school\images\hillside.jpg" />
+    <Content Include="school\images\hillside_stretch.jpg" />
+    <Content Include="school\images\home.JPG" />
+    <Content Include="school\images\man_icon.jpg" />
+    <Content Include="school\images\sign\1.jpg" />
+    <Content Include="school\images\sign\2.jpg" />
+    <Content Include="school\images\sign\3.jpg" />
+    <Content Include="school\images\sign\4.jpg" />
+    <Content Include="school\images\sign\5.jpg" />
+    <Content Include="school\images\sign\6.jpg" />
+    <Content Include="school\images\sign\7.JPG" />
+    <Content Include="school\images\sign\Main.jpg" />
+    <Content Include="school\images\TermDates.JPG" />
+    <Content Include="school\images\woman_icon.jpg" />
+    <Content Include="school\Information.aspx" />
+    <Content Include="school\Links.aspx" />
+    <Content Include="school\Main.aspx" />
+    <Content Include="school\Manage.aspx" />
+    <Content Include="school\ManagePTA.aspx" />
+    <Content Include="school\ManageStaff.aspx" />
+    <Content Include="school\Map.aspx" />
+    <Content Include="school\NotLoggedIn.aspx" />
+    <Content Include="school\Photos.aspx" />
+    <Content Include="school\PlayGame.aspx" />
+    <Content Include="school\PTA.aspx" />
+    <Content Include="school\sliderpics\1.jpg" />
+    <Content Include="school\sliderpics\10.jpg" />
+    <Content Include="school\sliderpics\2.jpg" />
+    <Content Include="school\sliderpics\3.jpg" />
+    <Content Include="school\sliderpics\4.jpg" />
+    <Content Include="school\sliderpics\5.jpg" />
+    <Content Include="school\sliderpics\6.jpg" />
+    <Content Include="school\sliderpics\7.jpg" />
+    <Content Include="school\sliderpics\8.jpg" />
+    <Content Include="school\sliderpics\9.jpg" />
+    <Content Include="school\images\bg.jpg" />
+    <Content Include="school\images\emblem.png" />
+    <Content Include="school\Staff.aspx" />
+    <Content Include="school\TermDates.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PhotoUtils.vb" />
+    <Compile Include="school\Diary-List.aspx.designer.vb">
+      <DependentUpon>Diary-List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="school\Diary-List.aspx.vb">
+      <DependentUpon>Diary-List.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Globals.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="recipes.aspx.designer.vb">
+      <DependentUpon>recipes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="recipes.aspx.vb">
+      <DependentUpon>recipes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="school\Calendar.aspx.designer.vb">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="school\Calendar.aspx.vb">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="school\Contact.aspx.designer.vb">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="school\Contact.aspx.vb">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="school\FileUploadCompleteEventArgs.vb" />
+    <Compile Include="school\Games.aspx.designer.vb">
+      <DependentUpon>Games.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="school\Games.aspx.vb">
+      <DependentUpon>Games.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="school\Governors.aspx.designer.vb">
+      <DependentUpon>Governors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="school\Governors.aspx.vb">
+      <DependentUpon>Governors.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="school\Home.aspx.designer.vb">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="school\Home.aspx.vb">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="school\Information.aspx.designer.vb">
+      <DependentUpon>Information.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="school\Information.aspx.vb">
+      <DependentUpon>Information.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="school\Links.aspx.designer.vb">
+      <DependentUpon>Links.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="school\Links.aspx.vb">
+      <DependentUpon>Links.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="school\Main.aspx.designer.vb">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="school\Main.aspx.vb">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="school\Manage.aspx.designer.vb">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="school\Manage.aspx.vb">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="school\ManagePTA.aspx.designer.vb">
+      <DependentUpon>ManagePTA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="school\ManagePTA.aspx.vb">
+      <DependentUpon>ManagePTA.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="school\ManageStaff.aspx.designer.vb">
+      <DependentUpon>ManageStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="school\ManageStaff.aspx.vb">
+      <DependentUpon>ManageStaff.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="school\Map.aspx.designer.vb">
+      <DependentUpon>Map.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="school\Map.aspx.vb">
+      <DependentUpon>Map.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="school\NotLoggedIn.aspx.designer.vb">
+      <DependentUpon>NotLoggedIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="school\NotLoggedIn.aspx.vb">
+      <DependentUpon>NotLoggedIn.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="school\Photos.aspx.designer.vb">
+      <DependentUpon>Photos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="school\Photos.aspx.vb">
+      <DependentUpon>Photos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="school\PlayGame.aspx.designer.vb">
+      <DependentUpon>PlayGame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="school\PlayGame.aspx.vb">
+      <DependentUpon>PlayGame.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="school\PTA.aspx.designer.vb">
+      <DependentUpon>PTA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="school\PTA.aspx.vb">
+      <DependentUpon>PTA.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="school\Staff.aspx.designer.vb">
+      <DependentUpon>Staff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="school\Staff.aspx.vb">
+      <DependentUpon>Staff.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="school\TermDates.aspx.designer.vb">
+      <DependentUpon>TermDates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="school\TermDates.aspx.vb">
+      <DependentUpon>TermDates.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\HtmlAgilityPack.dll" />
+    <Content Include="eo_web.ashx" />
+    <Content Include="favicon.ico" />
+    <Content Include="font.css" />
+    <Content Include="linear.aspx" />
+    <Content Include="linear.aspx.cs" />
+    <Content Include="pdf417.aspx" />
+    <Content Include="pdf417.aspx.cs" />
+    <Content Include="qrcode.aspx" />
+    <Content Include="qrcode.aspx.cs" />
+    <None Include="Calligraphic 421.ttf" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="packages.config" />
+    <None Include="school\Documents\Llangynfelyn_School_Handbook.pdf" />
+    <None Include="school\Documents\nod_ac_amcanion_yr_ysgol.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="school\2013\" />
+    <Folder Include="school\images\uploads\2013\" />
+    <Folder Include="school\images\uploads\governors\" />
+    <Folder Include="school\images\uploads\pta\" />
+    <Folder Include="school\images\uploads\staff\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{00000205-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>12085</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

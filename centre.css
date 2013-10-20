@@ -1,0 +1,11 @@
+﻿#html, body {
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   width:800px;
+   height: 100%;
+   margin: auto;
+   font-family:Calibri
+ }
+
