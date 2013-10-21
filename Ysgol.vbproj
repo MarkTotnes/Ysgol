@@ -37,13 +37,6 @@
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AjaxControlToolkit">
-      <HintPath>packages\AjaxControlToolkit.7.0725\lib\40\AjaxControlToolkit.dll</HintPath>
-    </Reference>
-    <Reference Include="AjaxMin">
-      <HintPath>packages\AjaxMin.4.97.4951.28483\lib\net40\AjaxMin.dll</HintPath>
-    </Reference>
-    <Reference Include="BarcodeLib.Barcode, Version=4.0.3.19, Culture=neutral, PublicKeyToken=6b2b1bba50bb2e01, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Charts.v13.1.Core, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
@@ -88,11 +81,6 @@
     <Reference Include="DevExpress.XtraScheduler.v13.1.Core, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="EO.Pdf, Version=4.0.60.2, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL" />
-    <Reference Include="EO.Web, Version=10.0.54.2, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL" />
-    <Reference Include="HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
-      <HintPath>packages\HtmlAgilityPack.1.4.6\lib\Net40\HtmlAgilityPack.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -132,11 +120,9 @@
     <Content Include="bin\EO.Pdf.dll" />
     <Content Include="bin\EO.Web.dll" />
     <Content Include="centre.css" />
-    <Content Include="datamatrix.aspx.cs" />
     <Content Include="Default.aspx" />
     <Content Include="school\Diary-List.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="recipes.aspx" />
     <Content Include="school\2010\DSC04125.JPG" />
     <Content Include="school\2010\Gwersi Beicio 001.jpg" />
     <Content Include="school\2010\S8000799.JPG" />
@@ -303,13 +289,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="recipes.aspx.designer.vb">
-      <DependentUpon>recipes.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="recipes.aspx.vb">
-      <DependentUpon>recipes.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
     <Compile Include="school\Calendar.aspx.designer.vb">
       <DependentUpon>Calendar.aspx</DependentUpon>
     </Compile>
@@ -449,15 +428,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\HtmlAgilityPack.dll" />
-    <Content Include="eo_web.ashx" />
     <Content Include="favicon.ico" />
     <Content Include="font.css" />
-    <Content Include="linear.aspx" />
-    <Content Include="linear.aspx.cs" />
-    <Content Include="pdf417.aspx" />
-    <Content Include="pdf417.aspx.cs" />
-    <Content Include="qrcode.aspx" />
-    <Content Include="qrcode.aspx.cs" />
     <None Include="Calligraphic 421.ttf" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
